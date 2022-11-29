@@ -1,48 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
-    <form action="mailto:1234@gmail.com" method="post" enctype="text/plain">
-        <table>
+
+<body align="center">
+    <h1>Contacto Adrián González</h1>
+    <form action="mailto:confinima@gmail.com" method="post" enctype="text/plain">
+        <table align="center">
             <tr>
-                <td>
+                <td align="right">
                     <label>Nombre: </label>
                 </td>
-                <td>
+                <td align="left">
                     <input type="text" name="nombre" required>
                 </td>
             </tr>
             <tr>
-                <td>
-                    <label for="">Apellidos: </label>
+                <td align="right">
+                    <label>Apellidos: </label>
                 </td>
-                <td>
+                <td align="left">
+                    <input type="text" name="apellido" required>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    <label>Email: </label>
+                </td>
+                <td align="left">
                     <input type="text" name="Email" required>
                 </td>
             </tr>
             <tr>
-                <td>
+                <td align="right">
+                    <label>Web Personal: </label>
+                </td>
+                <td align="left">
+                    <input type="text" name="web" required>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
                     <label>Comentarios: </label><br>
                 </td>
-                <td>
-                    <textarea rows="10" cols="100" name="mensaje" required></textarea><br>
+                <td align="left">
+                    <textarea rows="10" cols="21" name="mensaje" required></textarea><br>
                 </td>
             </tr>
             <tr>
                 <td>
+                    <label for="archivo">Subir archivo:</label>
+                </td>
+                <td>
+                    <input type="file" id="archivo" name="archivo">
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    <label>Email a usar: </label>
+                </td>
+                <td align="left">
+                    <input type="checkbox" name="gmail" value="Bike">
+                    <label for="vehicle1"> Gmail</label>
+                    <input type="checkbox" name="hotmail" value="Car">
+                    <label for="vehicle2"> Hotmail</label>
+                    <input type="checkbox" name="outlook" value="Boat">
+                    <label for="vehicle3"> Outlook</label>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    <label>Género: </label>
+                </td>
+                <td align="left">
+                    <input type="radio" id="masculino" name="genero">Masculino
+                    <input type="radio" id="femenino" name="genero">Femenino
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    <label for="cars">Dispositivo para escuchar música:</label>
+                </td>
+                <td align="left">
+                    <select id="cars">
+                        <option value="Elegir">Elegir</option>
+                        <option value="Ipod">Ipod</option>
+                        <option value="Radio">Radio</option>
+                        <option value="Ordenador">Ordenador</option>
+                        <option value="Movil">Movil</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
                     <input type="submit">
                 </td>
                 <td>
-                    <a href="index.html">Volver</a>
+                    <input type="reset">
+                </td>
+                <td>
+                    <button onclick="document.location='index.html'">Volver</a>
                 </td>
             </tr>
         </table>
     </form>
 </body>
+
 </html>
